@@ -1,0 +1,14 @@
+<!-- <p>recipies works!</p> -->
+<div class="row">
+    <div class="col-md-5">
+        <!-- (selectedRecipieforDetail)="handleRecipieDetail($event)" -->
+        <app-recipielist ></app-recipielist>
+        
+    </div>
+    <div class="col-md-7">
+        <app-recipiedetail [recipie]="selectedRecipie" *ngIf="selectedRecipie; else infoText"></app-recipiedetail>
+        <ng-template #infoText>
+            please select a recipie
+        </ng-template>
+    </div>
+</div>

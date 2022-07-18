@@ -1,0 +1,35 @@
+<!-- <p>shoppingedit works!</p> -->
+
+<div class="row">
+    <div class="container">
+        <form>
+            <div class="row">
+                <div class="col-sm-5 form-group">
+                    <label>Name</label>
+                    <input type="text" class="form-control" #nameInput/>
+                </div>
+                <div class="col-sm-2 form-group">
+                    <label>Amount</label>
+                    <input type="number" class="form-control" #amountInput/>
+                </div>
+            </div>
+            <!-- <div class="btn-group">
+                <button class="btn btn-primary">Add</button>
+                <button class="btn btn-success">Edit</button>
+                <button class="btn btn-danger">Delete</button>
+            </div>   -->
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <button class="btn btn-primary" style="margin: 1rem 0.5rem 0rem 0.5rem;" (click)="handleAddnew($event)">Add</button>
+                <!-- </div> -->
+                <!-- <div class="col-xs-12 col-sm-6 col-md-4"> -->
+                    <button class="btn btn-success" style="margin: 1rem 0.5rem 0rem 0.5rem;">Edit</button>
+                <!-- </div> -->
+                    <!-- <div class="col-xs-12 "> -->
+                    <button class="btn btn-danger" style="margin: 1rem 0.5rem 0rem 0.5rem;">Delete</button>
+                </div>
+                
+            </div>
+        </form>
+    </div>
+</div>

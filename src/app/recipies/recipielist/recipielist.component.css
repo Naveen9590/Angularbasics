@@ -1,0 +1,10 @@
+.dtype{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.pull-right{
+    /* justify-self: end; */
+    align-self: center;
+}

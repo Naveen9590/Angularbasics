@@ -1,0 +1,39 @@
+<div class="row">
+    <div class="col-xs-12">
+        <img src={{recipieItem.imgPath}} alt={{recipieItem.name}} class="img-responsive" style="max-height: 300px;" />
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-12">
+        <h1>{{recipieItem.name}}</h1>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-12">
+        <div class="btn-group" dropDirective >
+            <button type="button" class="btn btn-primary dropdown-toggle " >Manage Recipie<span class="caret"></span></button>
+            <ul class="dropdown-menu " >
+                <li><a href='#' (click)="handleAddtoShoppingList()">Add to Shopping list</a></li>
+                <li><a href='#'>Edit Recipie</a></li>
+                <li><a href='#'>Delete Recipie</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-12">
+        <h1>{{recipieItem.description}}</h1>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-xs-12">
+        <h1>Ingredients</h1>
+        <ul class="list-group">
+            <li class="list-group-item" *ngFor="let ingredient of recipieItem.ingredients">{{ingredient.name}}:{{ingredient.amount}}</li>
+        </ul>
+    </div>
+</div>
